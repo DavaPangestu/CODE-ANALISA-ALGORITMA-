@@ -1,9 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# ===========================
 # LATIHAN 1 - FRAUD ANALYSIS
-# ===========================
+
 print("=" * 50)
 print("ANALISIS FRAUD - LATIHAN 1")
 print("=" * 50)
@@ -73,9 +72,9 @@ print(f"Fraud-Fraud: {fraud_to_fraud}")
 print(f"Fraud-NonFraud: {fraud_to_nonfraud}")
 print(f"NonFraud-NonFraud: {nonfraud_to_nonfraud}")
 
-# ===========================
+
 # LATIHAN 2 - FRAUD ANALYSIS
-# ===========================
+
 print("\n" + "=" * 50)
 print("ANALISIS FRAUD - LATIHAN 2")
 print("=" * 50)
@@ -152,9 +151,8 @@ for i, comm in enumerate(communities, 1):
     fraud_nodes = sum(1 for n in comm if graph2.nodes[n]['status'] == 'F')
     print(f"Komunitas {i}: {len(comm)} nodes, {fraud_nodes} fraud nodes")
 
-# ===========================
 # VISUALISASI
-# ===========================
+
 fig, axes = plt.subplots(1, 2, figsize=(18, 8))
 
 # Visualisasi Latihan 1
@@ -182,9 +180,9 @@ axes[1].axis('off')
 plt.tight_layout()
 plt.show()
 
-# ===========================
+
 # ANALISIS RISK SCORE
-# ===========================
+
 print("\n" + "=" * 50)
 print("RISK SCORE ANALYSIS")
 print("=" * 50)
